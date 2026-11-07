@@ -3,34 +3,101 @@
 
 ## Descripción del proyecto
 
-Apoyo Educativo es una aplicación web desarrollada con el propósito de ofrecer un espacio digital de bienvenida y apoyo para los estudiantes.
+Apoyo Educativo es un proyecto web desarrollado con el propósito de facilitar la organización de información administrativa dentro de un establecimiento educativo.
 
-Actualmente, el proyecto cuenta con un formulario que permite ingresar el nombre de un visitante y recibir un saludo personalizado.
+Durante su desarrollo, el proyecto fue evolucionando hasta incorporar dos aplicaciones independientes: Planificación de Actividades y Asistencias de Docentes.
+
+Ambas buscan facilitar tareas que normalmente requieren llevar registros manuales, permitiendo consultar y administrar la información desde un navegador.
 
 ## Tecnologías utilizadas
 
-- Java 21
-- Spring Boot
-- Maven
-- HTML5
-- JavaScript
-- Git y GitHub
-- Visual Studio Code
+Java 21
+
+Spring Boot
+
+Maven
+
+HTML5
+
+Thymeleaf
+
+Spring Security
+
+Spring Data JPA
+
+PostgreSQL
+
+Neon
+
+Git y GitHub
+
+Render
+
+Visual Studio Code
 
 ## Organización del proyecto
 
-La aplicación está organizada en tres capas:
+Las aplicaciones utilizan una estructura organizada por capas:
 
-- **Controller:** recibe las solicitudes realizadas desde el navegador.
-- **Service:** contiene la lógica para generar los mensajes.
-- **Model:** representa los datos de los visitantes.
+Controller: recibe las solicitudes y dirige las operaciones del sistema.
+
+Service: contiene la lógica de funcionamiento y las reglas del proyecto.
+
+Repository: permite consultar y almacenar información mediante JPA.
+
+Model / Entity: representa los datos que se administran.
+
+Templates: contiene las vistas que utiliza el usuario.
 
 Esta organización permite mantener el código ordenado y facilita futuras mejoras.
 
 ## Rutas disponibles
 
-- `/api/saludo`: muestra un mensaje general de bienvenida.
-- `/api/bienvenida?nombre=Roxana`: muestra un saludo personalizado.
+1. Planificación de Actividades
+
+/login-actividades: inicio de sesión.
+
+/actividades: consulta de las actividades registradas.
+
+Aplicación publicada:
+https://planificacion-actividades.onrender.com
+
+2. Asistencias de Docentes
+
+/login: inicio de sesión.
+
+/asistencias: listado de asistencias registradas.
+
+/asistencias/nuevo: formulario para registrar una asistencia.
+
+/asistencias/editar/{id}: formulario para editar una asistencia existente.
+
+Aplicación publicada:
+https://asistencias-docentes.onrender.com
+
+## Reposiorios de Github
+  
+- Asistencia docentes: 
+https://github.com/roxanapereira1609-crypto/asistencias-docentes
+
+- Planificacion de actividades:
+https://github.com/roxanapereira1609-crypto/planificacion-actividades
+
+## Seguridad y validaciones
+
+Se implementó un sistema de inicio de sesión con roles de administrador y docente.
+
+Los permisos permiten limitar el acceso a determinadas operaciones según el usuario que haya iniciado sesión.
+
+## Base de datos y despliegue
+
+Las aplicaciones utilizan PostgreSQL alojado en Neon para almacenar sus registros.
+
+Los sistemas se encuentran publicados en Render y pueden consultarse desde un navegador.
+
+Durante las pruebas se comprobó que los registros permanecen disponibles después de volver a ingresar a las aplicaciones.
+
+También se verificó el proceso de actualización del código mediante GitHub y el despliegue automático en Render.
 
 ## Cómo ejecutar el proyecto
 
@@ -43,9 +110,12 @@ Esta organización permite mantener el código ordenado y facilita futuras mejor
 4. Esperar a que Spring Boot inicie correctamente.
 5. Abrir `http://localhost:8080` en el navegador.
 
+
 ## Estado actual
 
-El proyecto cuenta con un controlador REST, una capa de servicio, un modelo de visitante y un formulario web que utiliza JavaScript y `fetch()` para mostrar mensajes sin recargar la página.
+Apoyo Educativo cuenta con dos aplicaciones web publicadas y funcionales, que permiten administrar actividades y asistencias de docentes.
+
+Como parte de las siguientes mejoras, se contempla continuar fortaleciendo la experiencia del usuario, la organización de la información y las funcionalidades de ambos sistemas.
 
 ## Autora
 
