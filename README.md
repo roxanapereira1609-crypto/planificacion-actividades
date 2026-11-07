@@ -35,6 +35,28 @@ Render
 
 Visual Studio Code
 
+## Variables de entorno requeridas en Render
+
+Para que las aplicaciones de Apoyo Educativo funcionen correctamente en producción, se utilizan variables de entorno configuradas en Render. Estas permiten establecer la conexión con PostgreSQL en Neon y administrar las credenciales de acceso sin escribir contraseñas directamente en el código.
+
+| Variable | Función |
+|---|---|
+| `SPRING_PROFILES_ACTIVE` | Activa el perfil de producción (`prod`). |
+| `DB_URL` | Contiene la dirección de conexión a PostgreSQL en Neon. |
+| `DB_USER` | Identifica al usuario de la base de datos. |
+| `DB_PASSWORD` | Almacena la contraseña de conexión a la base de datos. |
+| `ADMIN_PASSWORD` | Define la contraseña del usuario administrador. |
+| `DOCENTE_PASSWORD` | Define la contraseña del usuario docente. |
+| `PORT` | Puerto utilizado por el servicio web, cuando corresponde a la configuración de Render. |
+
+### Seguridad de las credenciales
+
+Por motivos de seguridad, en este documento se presentan únicamente los nombres y las funciones de las variables de entorno.
+
+Las contraseñas y los datos privados de conexión se configuran directamente en Render y no se publican en GitHub.
+
+Esta práctica permite proteger la información sensible y facilita la administración de las aplicaciones durante su despliegue.
+
 ## Organización del proyecto
 
 Las aplicaciones utilizan una estructura organizada por capas:
