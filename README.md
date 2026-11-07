@@ -139,6 +139,14 @@ Apoyo Educativo cuenta con dos aplicaciones web publicadas y funcionales, que pe
 
 Como parte de las siguientes mejoras, se contempla continuar fortaleciendo la experiencia del usuario, la organización de la información y las funcionalidades de ambos sistemas.
 
+## Pitch ejecutivo: https://www.canva.com/design/DAHaNSPbkUE/-u4XOXASnl0OkUL971PF4w/view
+
+## Video de 5min: 
+
+https://correo2urledu-my.sharepoint.com/:v:/r/personal/rapereirad_correo_url_edu_gt/_layouts/15/stream.aspx?id=%2Fpersonal%2Frapereirad%5Fcorreo%5Furl%5Fedu%5Fgt%2FDocuments%2FProgramaci%C3%B3n%201%2FProyecto%2DAsistencia%2DDocente%2Ewmv&share=cQqqO4XksUs0QrcZt15%5FO3Z5EgUCEzKD%5FPP9Qqx8L98w0hiuIg  
+
+https://correo2urledu-my.sharepoint.com/:v:/r/personal/rapereirad_correo_url_edu_gt/_layouts/15/stream.aspx?id=%2Fpersonal%2Frapereirad%5Fcorreo%5Furl%5Fedu%5Fgt%2FDocuments%2FProgramaci%C3%B3n%201%2FProyecto%5FActividades%2Emp4&share=cQon%5FVZMnZyTRqDEkZkBPPCkEgUCEIKXA4TiLE0lkPIcOMdWVg
+
 ## Autora
 
 Roxana Adelaida Pereira Delgado
